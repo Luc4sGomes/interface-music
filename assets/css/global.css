@@ -1,0 +1,161 @@
+:root {
+  --color-pink: #d4418e;
+  --color-blue: #0652c5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 340px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
+i {
+  font-size: 30px;
+  color: white;
+  transition: 200ms all ease-in-out;
+}
+
+i:hover {
+  color: black;
+}
+
+p {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#logo-search {
+  color: #c2c800;
+  font-size: 18px;
+}
+
+input {
+  border: none;
+  height: 3.125rem;
+  width: 50%;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#search-button {
+  border: none;
+  margin-left: 4px;
+  height: 3.125rem;
+  border-radius: 0.5rem;
+  width: 6%;
+  cursor: pointer;
+}
+
+#sandwich-button-logo {
+  font-size: 30px;
+  width: 14rem;
+  background-color: #c2c800;
+  border: none;
+  margin-right: 2rem;
+  margin-left: 1rem;
+  transition: all 400ms ease-in-out;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#sandwich-button-logo:hover {
+  background-color: #969b09;
+}
+
+.keep-button-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 8vh 88vh 4vh;
+}
+
+header {
+  background-color: #c2c800;
+  grid-column: 1/3;
+}
+main {
+  background-color: white;
+  grid-column: 1/2;
+}
+aside {
+  background-color: black;
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+footer {
+  background-color: #c6c7bf;
+  grid-column: 1/2;
+  text-align: center;
+}
+
+.keep-elements-logo {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.keep-container-login {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form {
+  background-color: rgb(160, 157, 157);
+  border-radius: 0.5rem;
+  height: 50%;
+}
+
+#form fieldset {
+  border: none;
+}
+
+/*.container{
+  background: black;
+
+
+  display: grid;
+  grid-template-columns: 10fr 10fr 10fr;
+  grid-template-rows: 10fr 10fr 10fr;
+
+  grid-gap: 5px;
+}
+
+.container > div{
+  background:#d4418e;
+
+  width: 50%;
+  height: 50%;
+
+  justify-self: center;
+  align-self: center;
+}*/
