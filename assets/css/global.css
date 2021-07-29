@@ -25,7 +25,7 @@ html {
   }
 }
 
-i {
+.keep-elements-logo i {
   font-size: 30px;
   color: white;
   transition: 200ms all ease-in-out;
@@ -103,9 +103,10 @@ header {
 main {
   background-color: white;
   grid-column: 1/2;
+  
 }
 aside {
-  background-color: black;
+  background-color: #c2c800;
   grid-column: 2/3;
   grid-row: 2/4;
 }
@@ -129,15 +130,52 @@ footer {
   align-items: center;
 }
 
-#form {
-  background-color: rgb(160, 157, 157);
+#form{
+  background-color: rgb(173, 189, 111);
   border-radius: 0.5rem;
-  height: 50%;
+  height: 80%;
+  width: 80%;
+
 }
 
 #form fieldset {
+  height: 100%;
   border: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
+
+.keep-login-f-g{
+  margin-top: 3.75rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.facebook{
+  background-color: #0652c5;
+  border: none;
+  width: 12.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-top: 1.125rem;
+}
+
+.google{
+  background-color: red;
+  border: none;
+  width: 12.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-top: 1.125rem;
+}
+
+
 
 /*.container{
   background: black;
