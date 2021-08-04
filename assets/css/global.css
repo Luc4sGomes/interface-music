@@ -67,11 +67,11 @@ input {
 }
 
 .input-submit{
-  background-color: rgb(255, 248, 248);
+  background-color: rgb(153, 10, 153);
 }
 
 .input-submit:focus{
-  background-color:#c2c800;
+  background-color:purple;
 }
 
 form fieldset label {
