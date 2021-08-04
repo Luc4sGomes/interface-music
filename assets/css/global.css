@@ -38,7 +38,7 @@ main {
   grid-column: 1/2;
 }
 aside {
-  background-color: #c2c800;
+  background-color: rgba(0,0,0,0.3);
   grid-column: 2/3;
   grid-row: 2/4;
 }
@@ -161,7 +161,6 @@ form fieldset label{
   margin-right: 2rem;
   margin-left: 1rem;
   transition: all 400ms ease-in-out;
-  border-radius: 1rem;
   cursor: pointer;
 }
 
@@ -196,7 +195,7 @@ form fieldset label{
 }
 
 #button-request:hover {
-  background-color: #c2c800;
+  background-color: green;
 }
 
 @media (min-width: 340px) {
