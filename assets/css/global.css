@@ -25,7 +25,6 @@ html {
 }
 p {
   font-size: 14px;
-  font-weight: bold;
   font-style: italic;
 }
 
@@ -38,14 +37,23 @@ main {
   grid-column: 1/2;
 }
 aside {
-  background-color: rgba(0,0,0,0.3);
+  background-color: black;
   grid-column: 2/3;
   grid-row: 2/4;
 }
+
 footer {
-  background-color: #c6c7bf;
+  background-color:#c2c800;
   grid-column: 1/2;
   text-align: center;
+}
+
+.keep-list{
+  color: white;
+}
+
+.li{
+  color: white;
 }
 
 input {
@@ -58,7 +66,15 @@ input {
   font-family: sans-serif;
 }
 
-form fieldset label{
+.input-submit{
+  background-color: rgb(255, 248, 248);
+}
+
+.input-submit:focus{
+  background-color:#c2c800;
+}
+
+form fieldset label {
   font-size: 20px;
   font-family: sans-serif;
   font-style: italic;
@@ -80,8 +96,7 @@ form fieldset label{
   background-color: #0652c5;
   border: none;
   width: 12.5rem;
-  border-radius: 1rem;
-  font-weight: bold;
+  border-radius: 0.2rem;
   font-family: sans-serif;
   cursor: pointer;
   margin-top: 1.125rem;
@@ -91,8 +106,7 @@ form fieldset label{
   background-color: red;
   border: none;
   width: 12.5rem;
-  border-radius: 1rem;
-  font-weight: bold;
+  border-radius: 0.2rem;
   font-family: sans-serif;
   cursor: pointer;
   margin-top: 1.125rem;
@@ -126,7 +140,7 @@ form fieldset label{
   align-items: center;
 }
 
-.keep-logo-login{
+.keep-logo-login {
   width: 100%;
   height: 30px;
   display: flex;
@@ -134,7 +148,15 @@ form fieldset label{
   align-items: center;
 }
 
-#logo-login{
+.keep-list{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+#logo-login {
   font-size: 30px;
   margin-top: 18px;
 }
@@ -169,10 +191,10 @@ form fieldset label{
 }
 
 #form {
-  background-color: rgb(184, 187, 172);
+  background-color: white;
   border-radius: 0.5rem;
   height: 80%;
-  width: 80%;
+  width: 50%;
 }
 
 #form fieldset {
