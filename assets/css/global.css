@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 * {
@@ -20,9 +21,12 @@ html {
   width: 100%;
 }
 
-#logo-music:hover {
-  color: black;
+body{
+  font-size: 1.6rem;
+  overflow: hidden;
 }
+
+
 p {
   font-size: 14px;
   font-style: italic;
@@ -31,6 +35,7 @@ p {
 header {
   background-color: #c2c800;
   grid-column: 1/3;
+  z-index: 1;
 }
 main {
   background-color: white;
@@ -40,16 +45,14 @@ aside {
   background-color: black;
   grid-column: 2/3;
   grid-row: 2/4;
-}
-
-footer {
-  background-color:#c2c800;
-  grid-column: 1/2;
-  text-align: center;
+  z-index: 1;
 }
 
 .keep-list{
   color: white;
+  display: flex;
+  text-align: center;
+ 
 }
 
 .li{
@@ -59,7 +62,7 @@ footer {
 input {
   border: none;
   height: 3.125rem;
-  width: 50%;
+  width: 70%;
   border-radius: 0.5rem;
   outline: none;
   font-size: 14px;
@@ -67,11 +70,12 @@ input {
 }
 
 .input-submit{
-  background-color: rgb(153, 10, 153);
+  background-color: rgb(221, 218, 218);
+  z-index: 1;
 }
 
 .input-submit:focus{
-  background-color:purple;
+  background-color:whitesmoke;
 }
 
 form fieldset label {
@@ -96,20 +100,24 @@ form fieldset label {
   background-color: #0652c5;
   border: none;
   width: 12.5rem;
-  border-radius: 0.2rem;
+  height: 2.5rem;
+  border-radius: 16px;
   font-family: sans-serif;
   cursor: pointer;
   margin-top: 1.125rem;
+  z-index: 1;
 }
 
 .google {
   background-color: red;
   border: none;
   width: 12.5rem;
-  border-radius: 0.2rem;
+  height: 2.5rem;
+  border-radius: 16px;
   font-family: sans-serif;
   cursor: pointer;
   margin-top: 1.125rem;
+  z-index: 1;
 }
 
 .keep-button-search {
@@ -138,6 +146,11 @@ form fieldset label {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+}
+
+label{
+  z-index: 1;
 }
 
 .keep-logo-login {
@@ -156,6 +169,10 @@ form fieldset label {
   flex-flow: column wrap;
 }
 
+#logo-music{
+  margin-right: 1rem;
+}
+
 #logo-login {
   font-size: 30px;
   margin-top: 18px;
@@ -171,16 +188,17 @@ form fieldset label {
   margin-left: 4px;
   height: 3.125rem;
   border-radius: 0.5rem;
-  width: 6%;
+  width: 5rem;
   cursor: pointer;
 }
 
 #sandwich-button-logo {
   font-size: 30px;
   width: 14rem;
+  height: 100%;
   background-color: #c2c800;
   border: none;
-  margin-right: 2rem;
+  
   margin-left: 1rem;
   transition: all 400ms ease-in-out;
   cursor: pointer;
@@ -207,17 +225,18 @@ form fieldset label {
 }
 
 #button-request {
-  width: 30%;
+  width: 60%;
   margin-top: 1.25rem;
   border: none;
   cursor: pointer;
   border-radius: 0.2rem;
-  height: 2.125rem;
+  height: 3.125rem;
   transition: 200ms all ease-in-out;
+  z-index: 1;
 }
 
 #button-request:hover {
-  background-color: green;
+  background-color:#c2c800;
 }
 
 @media (min-width: 340px) {
@@ -225,6 +244,41 @@ form fieldset label {
     font-size: 62.5%;
   }
 }
+
+@media(max-width: 300px){
+  .keep-logo-login{
+    text-align: center;
+  }
+
+}
+
+.bolhas li{
+  animation: up 2s infinite;
+  animation-direction: alternate;
+  width: 40px;
+  height: 40px;
+  background-color:black;
+  display: block;
+  position: absolute;
+  bottom: -40px;
+
+}
+
+
+@keyframes up{
+  from{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50%{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    transform: translateY(-800px) rotate(960deg);
+  }
+}
+
 
 /*.container{
   background: black;
