@@ -1,13 +1,13 @@
-@keyframes up{
-    from{
-      opacity: 0;
-      transform: translateY(0);
-    }
-    50%{
-      opacity: 1;
-    }
-    to{
-      opacity: 0;
-      transform: translateY(-800px) rotate(960deg);
-    }
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(0);
   }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-800px) rotate(960deg);
+  }
+}
