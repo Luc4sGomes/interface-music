@@ -11,3 +11,13 @@
     transform: translateY(-800px) rotate(960deg);
   }
 }
+
+@keyframes show {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
