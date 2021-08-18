@@ -68,6 +68,20 @@ form fieldset label {
   font-style: italic;
 }
 
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+  margin-top: 1rem;
+}
+
+#keep-names{
+  background-color: black;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
 #logo-music {
   margin-right: 1rem;
 }

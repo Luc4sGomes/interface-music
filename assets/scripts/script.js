@@ -16,7 +16,6 @@ for (let i = 0; i < 10; i++) {
   li.style.left = `${position}%`;
   li.style.animationDelay = `${delay}s`;
   li.style.animationDuration = `${delay}s`;
-  li.style.borderRadius = "36px";
 
   li.style.animationTimingFunction = `cubic-bezier(${Math.random()},${Math.random()},${Math.random()},${Math.random()})`;
 
