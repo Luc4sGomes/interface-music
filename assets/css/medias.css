@@ -1,0 +1,12 @@
+@media (min-width: 340px) {
+    :root {
+      font-size: 62.5%;
+    }
+  }
+  
+  @media(max-width: 300px){
+    .keep-logo-login{
+      text-align: center;
+    }
+  
+  }

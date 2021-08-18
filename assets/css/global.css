@@ -48,16 +48,6 @@ aside {
   z-index: 1;
 }
 
-.keep-list{
-  color: white;
-  display: flex;
-  text-align: center;
- 
-}
-
-.li{
-  color: white;
-}
 
 input {
   border: none;
@@ -69,14 +59,7 @@ input {
   font-family: sans-serif;
 }
 
-.input-submit{
-  background-color: rgb(221, 218, 218);
-  z-index: 1;
-}
 
-.input-submit:focus{
-  background-color:whitesmoke;
-}
 
 form fieldset label {
   font-size: 20px;
@@ -84,90 +67,12 @@ form fieldset label {
   font-style: italic;
 }
 
-.keep-elements-logo i {
-  font-size: 30px;
-  color: white;
-  transition: 200ms all ease-in-out;
-}
-
-.keep-login-f-g {
-  margin-top: 3.75rem;
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.facebook {
-  background-color: #0652c5;
-  border: none;
-  width: 12.5rem;
-  height: 2.5rem;
-  border-radius: 16px;
-  font-family: sans-serif;
-  cursor: pointer;
-  margin-top: 1.125rem;
-  z-index: 1;
-}
-
-.google {
-  background-color: red;
-  border: none;
-  width: 12.5rem;
-  height: 2.5rem;
-  border-radius: 16px;
-  font-family: sans-serif;
-  cursor: pointer;
-  margin-top: 1.125rem;
-  z-index: 1;
-}
-
-.keep-button-search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  height: 100%;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 8vh 88vh 4vh;
-}
-
-.keep-elements-logo {
-  height: 100%;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.keep-container-login {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
 
 label{
   z-index: 1;
 }
 
-.keep-logo-login {
-  width: 100%;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.keep-list{
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-}
 
 #logo-music{
   margin-right: 1rem;
@@ -239,45 +144,11 @@ label{
   background-color:#c2c800;
 }
 
-@media (min-width: 340px) {
-  :root {
-    font-size: 62.5%;
-  }
-}
-
-@media(max-width: 300px){
-  .keep-logo-login{
-    text-align: center;
-  }
-
-}
-
-.bolhas li{
-  animation: up 2s infinite;
-  animation-direction: alternate;
-  width: 40px;
-  height: 40px;
-  background-color:black;
-  display: block;
-  position: absolute;
-  bottom: -40px;
-
-}
 
 
-@keyframes up{
-  from{
-    opacity: 0;
-    transform: translateY(0);
-  }
-  50%{
-    opacity: 1;
-  }
-  to{
-    opacity: 0;
-    transform: translateY(-800px) rotate(960deg);
-  }
-}
+
+
+
 
 
 /*.container{
