@@ -114,7 +114,7 @@ form fieldset label {
 #form {
   background-color: white;
   border-radius: 0.5rem;
-  height: 500px;
+  height: 90%;
   width: 50%;
   z-index: 1;
 }
