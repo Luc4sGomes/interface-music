@@ -115,9 +115,8 @@ li{
   width: 14rem;
   height: 100%;
   border: none;
-  margin-left: 1rem;
   transition: all 400ms ease-in-out;
-  cursor: pointer;
+  cursor:pointer;
   background-color: black;
 }
 
@@ -129,7 +128,7 @@ li{
   background-color: white;
   border-radius: 0.5rem;
   height: 90%;
-  width: 50%;
+  width: 80%;
   z-index: 1;
   animation: show 2s;
   box-shadow: 5px 5px 20px whitesmoke;
