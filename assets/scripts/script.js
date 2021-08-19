@@ -7,7 +7,7 @@ for (let i = 0; i < 10; i++) {
   const random = (min, max) => Math.random() * (max - min) + min;
   const size = Math.floor(random(10, 120));
   const position = random(1, 99);
-  const delay = random(5, 0.1);
+  const delay = random(5, 1);
   const duration = random(24, 12);
 
   li.style.width = `${size}px`;
