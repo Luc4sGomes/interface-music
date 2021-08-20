@@ -76,6 +76,10 @@ li{
   margin-top: 1rem;
 }
 
+form{
+  overflow: hidden;
+}
+
 #keep-names{
   background-color: black;
   border-radius: 2rem;
@@ -157,6 +161,9 @@ li{
   border-radius: 0.2rem;
   height: 3.125rem;
   transition: 200ms all ease-in-out;
+  animation: animationInputs 2s;
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
 }
 
 #button-request:hover {
@@ -166,6 +173,17 @@ li{
     var(--color-blue) 1%,
     var(--color-purple) 70%
   );
+}
+
+#email{
+  animation: animationInputs 2s;
+}
+
+#password{
+    animation: animationInputs 2s;
+    animation-delay:200ms;
+    animation-fill-mode: backwards
+  
 }
 /*.container{
   background: black;

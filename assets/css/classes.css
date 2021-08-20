@@ -2,6 +2,7 @@
   color: white;
   display: flex;
   text-align: center;
+  animation: show 2s;
 }
 
 .input-submit {
