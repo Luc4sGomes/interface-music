@@ -22,29 +22,39 @@ for (let i = 0; i < 10; i++) {
   bolhas.appendChild(li);
 }
 
-const btnRequest = document.querySelector("#button-request"); //can do better!
+const btnRequest = document.querySelector("#button-request");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  fetch("pessoas.json")
-    .then((response) => {
+  fetch("pessoas.json") //fazendo uma requisicao no meu arquivo json
+    .then((response) => { //se for ok vai retornar a resposta em json
       return response.json();
     })
-    .then((jsonBody) => {
-      verificaUser(jsonBody);
+    .then((jsonBody) => { //meu valor final
+      verificaUser(jsonBody); //chama a funcao pra ver se o user é igual ao valor dos inputs
+     
     });
 
-  function verificaUser(json) {
+  function verificaUser(json) { //recebe meu jsonBody 
     const inputEmail = document.querySelector("#email");
     const inputPassword = document.querySelector("#password");
+    const inputEmailValue = inputEmail.value;
+    const inputPasswordValue = inputPassword.value;
 
-    for (let pessoa of json) {
-      if (inputEmail.value !== pessoa.email && Number(inputPassword.value) !== pessoa.idade) {
-        console.log('a');
+    json.forEach((user) => { //varrendo meu array json que vem do fetch
+      
+      
+      //verfica se o email do input e a senha são iguais ao email e cpf do meu user no json
+      if(inputEmailValue.toLowerCase() === user.email && inputPasswordValue.replace(/[^0-9]/g, '')){ 
+        console.log('essa email existe');
       }
+      else{
+        return;
+      }
+    });
 
-      console.log('cadastrou');
-     
-    }
+
+
+    
   }
 });
