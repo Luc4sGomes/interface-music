@@ -102,3 +102,23 @@
   position: absolute;
   bottom: -40px;
 }
+
+.image-artist-anita{
+  background: white url('/assets/img/tx152j11.bmp') no-repeat center center/ cover;
+  transition: 800ms all ease-in-out;
+}
+
+.image-artist-mckevin{
+  background: white url('/assets/img/pvh4thg7.bmp') no-repeat center center/ cover;
+  transition: 800ms all ease-in-out;
+}
+
+.image-artist-ludmilla{
+  background: white url('/assets/img/jfr29rpp.bmp') no-repeat center center/ cover;
+  transition: 800ms all ease-in-out;
+}
+
+.image-artist-traviscott{
+  background: white url('/assets/img/n1l0edmq.bmp') no-repeat center center/ cover;
+  transition: 800ms all ease-in-out;
+}
