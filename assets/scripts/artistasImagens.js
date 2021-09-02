@@ -1,5 +1,5 @@
 export const lis = document.querySelectorAll("ul .li"); //peguei todos meus li
-export const aside = document.querySelector("aside"); //peguei minha ul
+const aside = document.querySelector("aside"); //peguei minha ul
 
 export default function artistImage(event) {
   if (event.innerText === "Anita") {

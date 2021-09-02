@@ -1,6 +1,8 @@
 import artistImage from "./artistasImagens.js";
 import {lis} from "./artistasImagens.js";
 
+
+
 const form = document.querySelector("#form");
 const bolhas = document.querySelector("ul.bolhas");
 
@@ -86,5 +88,4 @@ keepList.forEach((li) => { //varrendo cada li
     
   });
 });
-
 
